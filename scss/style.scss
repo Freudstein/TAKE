@@ -15,8 +15,78 @@ body{
 	@include font;
 }
 
+/* ====== COMMON STYLES ====== */
+
+.container{
+	position: relative;
+	margin: 0 auto;
+	width: 68.3%;
+
+	padding: 0 30px;
+}
+
+/* vertical inscription on the left */
+
+.sidetext{
+	@extend %OpenSansSemibold;
+	@include font(12px, 15px, #fff, uppercase);
+
+	position: absolute;
+	top: 50%;
+	left: 10px;
+
+	transform: rotate(-90deg) translateY(-50%);
+}
+
+.sidetext__faded{
+	@extend %OpenSansLight;
+	margin-right: 5px;
+}
 
 /* ====== HEADER ====== */
+
+.header{
+	position: relative;
+	background-image: url("../img/header-bg.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	
+	height: 100vh;
+}
+
+.header__container{
+	height: 100%;
+}
+
+.header__inner{	
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+
+	transform: translateY(-50%);
+
+	padding-left: 30px;
+}
+
+.logo{
+	padding-top: 55px;
+}
+
+.header__pagetitle{
+	margin-bottom: 35px;
+
+	@extend %OpenSansLight;
+	@include font(60px, 65px, #fff, null);
+}
+
+.header__text{
+	width: 38.2%;
+
+	color: #fff;
+}
+
 
 
 

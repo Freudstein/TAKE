@@ -386,9 +386,19 @@ template {
   /* Legacy iOS */
 }
 
+.sidetext__faded, .header__pagetitle {
+  font-family: "Open Sans Light", sans-serif;
+  font-weight: 300;
+}
+
 body {
   font-family: "Open Sans Regular", sans-serif;
   font-weight: 400;
+}
+
+.sidetext {
+  font-family: "Open Sans Semibold", sans-serif;
+  font-weight: 600;
 }
 
 /* ======================== MY GLOBAL STYLES ======================== */
@@ -487,4 +497,65 @@ body {
   text-transform: none;
 }
 
+/* ====== COMMON STYLES ====== */
+.container {
+  position: relative;
+  margin: 0 auto;
+  width: 68.3%;
+  padding: 0 30px;
+}
+
+/* vertical inscription on the left */
+.sidetext {
+  font-size: 12px;
+  line-height: 15px;
+  color: #fff;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: rotate(-90deg) translateY(-50%);
+}
+
+.sidetext__faded {
+  margin-right: 5px;
+}
+
 /* ====== HEADER ====== */
+.header {
+  position: relative;
+  background-image: url("../img/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.header__container {
+  height: 100%;
+}
+
+.header__inner {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  padding-left: 30px;
+}
+
+.logo {
+  padding-top: 55px;
+}
+
+.header__pagetitle {
+  margin-bottom: 35px;
+  font-size: 60px;
+  line-height: 65px;
+  color: #fff;
+}
+
+.header__text {
+  width: 38.2%;
+  color: #fff;
+}
