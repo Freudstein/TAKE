@@ -730,9 +730,7 @@ body {
 
 /* ====== ADVERTISMENT ====== */
 .slogun {
-  margin-bottom: 125px;
-  padding-top: 25%;
-  padding-bottom: 7.2%;
+  padding: 25% 0 7.2%;
   background-image: url("../img/car-bg.jpg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -752,3 +750,43 @@ body {
   width: 470px;
   color: #fff;
 }
+
+/* ====== REASONS ====== */
+.reasons {
+  position: relative;
+  padding: 125px 0 150px;
+  background-color: #82ca9c;
+}
+
+.reason__heading {
+  margin-bottom: 60px;
+  color: #fff;
+}
+
+.reasons__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reasons__item {
+  width: 30%;
+}
+
+.reasons__small-heading {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.reasons__text {
+  font-size: 14px;
+  line-height: 24px;
+  color: #fff;
+}
+
+.reasons__sidetext {
+  top: 160px;
+  left: 40px;
+  color: #fff;
+}
+
+/* ====== PLANS ====== */
