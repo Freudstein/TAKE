@@ -396,7 +396,7 @@ body, .details__text {
   font-weight: 400;
 }
 
-.small-heading, .sidetext {
+.small-heading, .sidetext, .footer__links-heading {
   font-family: "Open Sans Semibold", sans-serif;
   font-weight: 600;
 }
@@ -862,4 +862,103 @@ body {
 
 .plans__apple-logo {
   margin-right: 20px;
+}
+
+.plans__sidetext {
+  top: 175px;
+  left: 40px;
+  color: #b8b8b8;
+}
+
+/* ====== FOOTER ====== */
+.footer {
+  padding: 125px 0 155px;
+  background-color: #192431;
+  color: #fff;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__left-block {
+  width: 46.3%;
+}
+
+.footer__small-heading {
+  margin-bottom: 25px;
+  color: #fff;
+}
+
+.footer__text {
+  margin-bottom: 70px;
+}
+
+.footer__links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__links-list {
+  width: 30%;
+}
+
+.footer__links-heading {
+  margin-bottom: 25px;
+}
+
+.footer__links-link:hover {
+  color: #a3a3a3;
+}
+
+.footer__links-link:active {
+  opacity: .5;
+}
+
+.footer__right-block {
+  width: 38.2%;
+}
+
+.footer__form {
+  width: 100%;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.footer__input {
+  width: 85%;
+  padding: 20px;
+  background-color: #fff;
+  font-size: 14px;
+  line-height: 14px;
+  color: #959595;
+}
+
+.footer__button {
+  padding: 20px;
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #82ca9c;
+}
+
+.footer__button:hover {
+  background-color: #3afd80;
+}
+
+.footer__button:active {
+  opacity: .5;
+}
+
+.footer__button:active .footer__checkmark {
+  opacity: 1;
+}
+
+.footer__subtitle {
+  font-size: 12px;
+  line-height: 18px;
+  color: #57697f;
+  width: 74.4%;
 }
