@@ -331,4 +331,83 @@ body{
 
 /* ====== PLANS ====== */
 
+.plans{
+	position: relative;
+	padding: 100px 0 145px;
+
+	background-color: #f6f7fa;
+}
+
+.plans__inner{
+	display: flex;
+	justify-content: space-between;
+}
+
+.plans__block{
+	padding: 45px 50px;
+	width: 48.5%;	
+
+	&:hover{
+		background-color: #fff;
+
+		box-shadow: 0px 0px 10px 0px rgba(#000, 0.3);
+
+		.plans__highlight{
+			background-color: #bd8cbf;
+		}
+	}
+}
+
+.plans__highlight{
+	display: inline-block;
+
+	margin-bottom: 23px;
+	padding: 8px 17px;
+
+	@extend %OpenSansBold;
+	@include font(11px, 11px, #fff, uppercase);
+
+	border-radius: 5px;
+
+	background-color: #e1e1e1;
+}
+
+.plans__heading{
+	margin-bottom: 20px;
+
+	@extend %OpenSansLight;
+	@include font(30px, 40px, #2e3b4e, null);
+
+}
+
+.plans__text{
+	margin-bottom: 25px;
+
+	@include font(14px, 25px, #8297a7, null);
+}
+
+.plans__button{
+	margin-bottom: 20px;
+	padding: 18px 30px;
+
+	@extend %OpenSansBold;
+	@include font(13px, 13px, #fff, uppercase);
+
+	border-radius: 3px;
+
+	background-color: #82ca9c;
+
+	&:hover{
+		background-color: #3afd80;
+	}
+
+	&:active{
+		background-color: #cecece;
+	}
+}
+
+.plans__apple-logo{
+	margin-right: 20px;
+}
+
 
