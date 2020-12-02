@@ -262,4 +262,33 @@ body{
 	color: #b8b8b8;
 }
 
+/* ====== ADVERTISMENT ====== */
+
+.slogun{
+	margin-bottom: 125px;
+	padding-top: 25%;
+	padding-bottom: 7.2%;
+
+	background-image: url("../img/car-bg.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+.slogun__header{
+	width: 500px;
+	margin-bottom: 35px;
+
+	@extend %OpenSansLight;
+	@include font(60px, 65px, #fff, null);
+}
+
+.slogun__text{
+	margin-bottom: 20px;
+	width: 470px;
+
+	color: #fff;
+}
+
+
 

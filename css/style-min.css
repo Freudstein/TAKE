@@ -386,7 +386,7 @@ template {
   /* Legacy iOS */
 }
 
-.heading, .sidetext__faded, .header__pagetitle, .advantages__heading {
+.heading, .sidetext__faded, .header__pagetitle, .advantages__heading, .slogun__header {
   font-family: "Open Sans Light", sans-serif;
   font-weight: 300;
 }
@@ -726,4 +726,29 @@ body {
   top: 35px;
   left: 40px;
   color: #b8b8b8;
+}
+
+/* ====== ADVERTISMENT ====== */
+.slogun {
+  margin-bottom: 125px;
+  padding-top: 25%;
+  padding-bottom: 7.2%;
+  background-image: url("../img/car-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.slogun__header {
+  width: 500px;
+  margin-bottom: 35px;
+  font-size: 60px;
+  line-height: 65px;
+  color: #fff;
+}
+
+.slogun__text {
+  margin-bottom: 20px;
+  width: 470px;
+  color: #fff;
 }
