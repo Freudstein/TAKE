@@ -30,6 +30,11 @@ body{
 	font-size: 35px;
 }
 
+.small-heading{
+	@extend %OpenSansSemibold;
+	color: #67676d;
+}
+
 /* vertical inscription on the left */
 
 .sidetext{
@@ -37,9 +42,7 @@ body{
 	@include font(12px, 15px, #fff, uppercase);
 
 	position: absolute;
-	top: 50%;
-	left: 10px;
-
+	
 	transform: rotate(-90deg) translateY(-50%);
 }
 
@@ -90,6 +93,11 @@ body{
 	width: 38.2%;
 
 	color: #fff;
+}
+
+.header__sidetext{
+	top: 50%;
+	left: 10px;
 }
 
 /* ====== INFO ====== */
@@ -215,6 +223,43 @@ body{
 	position: absolute;
 	bottom: 43px;
 	right: 31px;
+}
+
+/* ====== DETAILS ====== */
+
+.details{
+	position: relative;
+
+	margin-bottom: 150px;
+}
+
+.details__heading{
+	margin-bottom: 55px;
+}
+
+.details__list{
+	display: flex;
+	justify-content: space-between;
+}
+
+.details__item{
+	width: 22.1%;
+}
+
+.details__small-heading{
+	margin-bottom: 25px;
+}
+
+.details__text{
+	@extend %OpenSansRegular;
+	font-size: 14px;
+}
+
+.details__sidetext{
+	top: 35px;
+	left: 40px;
+
+	color: #b8b8b8;
 }
 
 

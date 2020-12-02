@@ -391,12 +391,12 @@ template {
   font-weight: 300;
 }
 
-body {
+body, .details__text {
   font-family: "Open Sans Regular", sans-serif;
   font-weight: 400;
 }
 
-.sidetext {
+.small-heading, .sidetext {
   font-family: "Open Sans Semibold", sans-serif;
   font-weight: 600;
 }
@@ -514,6 +514,10 @@ body {
   font-size: 35px;
 }
 
+.small-heading {
+  color: #67676d;
+}
+
 /* vertical inscription on the left */
 .sidetext {
   font-size: 12px;
@@ -521,8 +525,6 @@ body {
   color: #fff;
   text-transform: uppercase;
   position: absolute;
-  top: 50%;
-  left: 10px;
   transform: rotate(-90deg) translateY(-50%);
 }
 
@@ -567,6 +569,11 @@ body {
 .header__text {
   width: 38.2%;
   color: #fff;
+}
+
+.header__sidetext {
+  top: 50%;
+  left: 10px;
 }
 
 /* ====== INFO ====== */
@@ -686,4 +693,37 @@ body {
   position: absolute;
   bottom: 43px;
   right: 31px;
+}
+
+/* ====== DETAILS ====== */
+.details {
+  position: relative;
+  margin-bottom: 150px;
+}
+
+.details__heading {
+  margin-bottom: 55px;
+}
+
+.details__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.details__item {
+  width: 22.1%;
+}
+
+.details__small-heading {
+  margin-bottom: 25px;
+}
+
+.details__text {
+  font-size: 14px;
+}
+
+.details__sidetext {
+  top: 35px;
+  left: 40px;
+  color: #b8b8b8;
 }
